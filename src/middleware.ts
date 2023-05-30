@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server'
 import { Ratelimit } from '@upstash/ratelimit'
 import { Redis } from '@upstash/redis'
 
-export const db = Redis.fromEnv()
+const db = Redis.fromEnv()
 
 const ratelimit = new Ratelimit({
   redis: db,
