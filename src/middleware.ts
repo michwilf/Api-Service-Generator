@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 import { getToken } from 'next-auth/jwt'
 import { withAuth } from 'next-auth/middleware'
 import { NextResponse } from 'next/server'
